@@ -1,20 +1,9 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layouts.main');
 
-        <title>@yield('title')</title>
+@section('title', 'Jhow Bananas');
 
-         <link rel="stylesheet" href="/css/styles.css">
-         <script src="js/scripts.js"></script>
-    </head>
-    <body class="antialiased">
+@section('content')
 
-        @yield('content')
-
-        <footer>
-            <p>Jhow Bananas &copy; 2023</p>
-        </footer>
-    </body>
-</html>
+<h1>Welcome to Bananas</h1>
+    
+@endsection
