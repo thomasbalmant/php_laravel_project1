@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class EventController extends Controller
 {
-    public function Index()
+    public function index()
     {
         $nome = "Matheus";
         $idade = 29;
@@ -27,7 +27,7 @@ class EventController extends Controller
         );
     }
 
-    public function Create() {
+    public function create() {
         return view('events.create');
     }
 }
