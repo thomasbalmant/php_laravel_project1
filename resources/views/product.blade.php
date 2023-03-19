@@ -5,7 +5,8 @@
 @section('content')
     @if ($id != null)
         <p>Exibindo produto id: {{ $id }}</p>
-    @else
-     <p>Não há produtos a serem exibidos.</p>
+    @endif
+    @if ($busca != null)
+        <p>Usuário buscou por: {{ $busca }}</p>
     @endif
 @endsection
