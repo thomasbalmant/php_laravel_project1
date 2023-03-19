@@ -26,4 +26,8 @@ class EventController extends Controller
             ]
         );
     }
+
+    public function Create() {
+        return view('events.create');
+    }
 }
